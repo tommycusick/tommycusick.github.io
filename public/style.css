@@ -1,0 +1,189 @@
+/**
+ * Copyright 2011 Tommy Cusick. All Rights Reserved.
+ */
+
+a {
+  text-decoration: none;
+  color: #1743bc;
+  -webkit-transition: color .2s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1f59fb;
+}
+
+body {
+  background-color: #efefef;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  color: #555;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.5em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  display: block;
+}
+nav ul li > * {
+  display: block;
+  line-height: 4em;
+  padding: 0em 0.5em;
+}
+nav ul li a {
+  -webkit-transition: background-color 0.1s ease-out;
+}
+nav ul li a:hover, nav ul li a#current {
+  background-color: #aaa;
+  color: #eee;
+  text-decoration: none;
+
+  box-shadow: inset 0px 3px 6px #555;
+  -moz-box-shadow: inset 0px 3px 6px #555;
+  -webkit-box-shadow: inset 0px 3px 6px #555;
+}
+nav ul li a:active, nav ul li a#current {
+  background-color: #aaa;
+}
+
+p {
+  line-height: 1.75em;
+  padding-bottom: 0.25em;
+  text-align: justify;
+}
+
+section#content {
+  width: 70%;
+  min-width: 640px;
+  max-width: 768px;
+
+  background-color: #fff;
+  margin: 2em auto;
+  padding: 2em;
+
+  box-shadow: 0px 3px 6px #aaa;
+  -moz-box-shadow: 0px 3px 6px #aaa;
+  -webkit-box-shadow: 0px 3px 6px #aaa;
+}
+section#content p:first-child {
+  text-align: center;
+}
+
+section#header {
+  background-color: #ccc;
+  height: 4em;
+  margin-top: 2em;
+  padding: 0 3em;
+
+  box-shadow: 0px 3px 6px #aaa;
+  -moz-box-shadow: 0px 3px 6px #aaa;
+  -webkit-box-shadow: 0px 3px 6px #aaa;
+}
+
+section.resume div {
+  margin: 0.3em 0;
+  padding: 0.1em 0.2em;
+}
+section.resume h2 {
+  font-size: inherit;
+  margin-top: 2em;
+}
+section.resume h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+section.resume h3:first-of-type {
+  margin: inherit;
+}
+section.resume h3 span.role, section.resume h3 span.entity {
+  font-weight: normal;
+}
+section.resume h3 span.entity:after, section.resume h3 span.role:after,
+section.resume h3 span.institution:after {
+  content: '\00a0\00b7';
+}
+section.resume p {
+  padding-left: 1.0em;
+  line-height: 1.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-before: 0.5em;
+}
+section.resume span.timeframe {
+  float: right;
+  font-style: italic;
+  margin: 0.3em 0;
+  padding: 0.1em 0.2em;
+}
+section.resume#awards p {
+  text-align: center;
+}
+
+.hoverable:hover {
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.toggle {
+  font-weight: normal;
+  font-size: smaller;
+}
+.toggle:hover {
+  cursor: pointer;
+}
+.toggle:before {
+  content: " [ ";
+}
+.toggle:after {
+  content: " ]";
+}
+
+section.mainpage p#landing-intro {
+  font-weight: 100;
+  font-size: 2em;
+}
+
+section.mainpage ul {
+  line-height: 1.8em;
+  font-size: 1.1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: monospace;
+}
+section.mainpage ul li {
+  display: inline;
+  color: #999;
+}
+section.mainpage ul li:after {
+  content: ' */ \2026';
+  color: #ddd;
+}
+section.mainpage ul li:before {
+  content: ' /* ';
+  color: #ddd;
+}
+section.mainpage ul li:last-child:after {
+  content: ' */';
+}
+
+section.foldable div > p {
+  min-width: 600px;
+  max-width: 723px;
+}

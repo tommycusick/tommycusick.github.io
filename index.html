@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Tommy Cusick / R&eacute;sum&eacute;</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css" /> 
+    <script type="text/javascript"> 
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-9655002-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+      })();
+    </script> 
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("section.foldable div > p").each(function() {
+          if (!$(this).hasClass("init-shown")) {
+            $(this).hide();
+          }
+
+          var child = $(this);
+          $(this).parent().click(function() {
+            child.slideToggle('fast', 'linear');
+          });
+          $(this).parent().addClass("hoverable");
+        });
+
+        $("section.foldable h2").each(function() {
+          var toggler = $("<a/>", { html: "Expand" });
+          toggler.appendTo($("<span/>", { class: "toggle" }).appendTo(this));
+
+          var h2 = $(this);
+          toggler.toggle(
+            function() {
+              h2.siblings("div").children("p").each(function() {
+                $(this).slideDown();
+              });
+              $(this).html("Compress");
+            },
+            function() {
+              h2.siblings("div").children("p").each(function() {
+                $(this).slideUp();
+              });
+              $(this).html("Expand");
+            }
+          );
+
+        });
+      });
+    </script>
+  </head> 
+  <body> 
+    <section id="header"> 
+      <nav> 
+        <ul> 
+          <li><a id="current">r&eacute;sum&eacute;</a></li>
+          <li><a href="mailto:tommy+website@tommycusick.com">contact</a></li>
+        </ul>
+      </nav> 
+      <h1>Tommy Cusick</h1> 
+    </section> 
+    <section id="content">
+      <p>I seek to explore my <em>knack for design</em> while building <strong>awesome software</strong> for people everywhere.</p>
+      <section class="resume" id="education">
+        <h2>Education</h2>
+        <div>
+          <span class="timeframe">August 2008 &ndash; May 2010</span>
+          <h3>
+            <span class="entity">Cornell University</span>
+            <span class="institution">College of Engineering</span>
+            <span class="location">Ithaca, NY</span></h3>
+        </div>
+        <div>
+          <span class="timeframe">August 2006 &ndash; August 2008</span>
+          <h3>
+            <span class="entity">Case Western Reserve University</span>
+            <span class="institution">School of Engineering</span>
+            <span class="location">Cleveland, OH</span>
+          </h3>
+          <p>B.Sc. Cum Laude in Computer Science &#183; Information Science Minor &#183; HCI Specialization &#183; 3.726 GPA</p>
+        </div>
+      </section>
+      <section class="resume foldable" id="tech-experience">
+        <h2>Technical Experience</h2>
+        <div>
+          <span class="timeframe">January 2012 &ndash; Present</span>
+          <h3>
+            <span class="role">Software Engineer</span>
+            <span class="institution">Google</span>
+            <span class="location">Mountain View, CA</span>
+          </h3>
+          <p class="init-shown">As a member of the Identity team I lead a variety of infrastructure and user-facing projects focusing on the sign in experience of Google's authentication platform.
+          </p>
+        </div>
+        <div>
+          <span class="timeframe">July 2010 &ndash; January 2012</span>
+          <h3>
+            <span class="role">Software Engineer (Site Reliability)</span>
+            <span class="institution">Google</span>
+            <span class="location">Mountain View, CA</span>
+          </h3>
+          <p>Restructured subsystems and participated in an on-call rotation to maintain reliability of a global authentication service used by millions of users each day.  Architected tools for operational task automation and oversaw capacity planning to ensure scalability without impacting end-user latency.</p>
+        </div>
+        <div>
+          <span class="timeframe">January 2010 &ndash; April 2010</span>
+          <h3>
+            <span class="role">Software Engineer</span>
+            <span class="institution">Cornell Interaction Design Lab</span>
+            <span class="location">Ithaca, NY</span>
+          </h3>
+          <p>Developed an instrumented augmented reality platform to study a social network consisting of shared annotations in the physical world.  The initial prorotype [<a href="/static/BOOM2010.pdf">PDF</a>], developed in two weeks, won the <a href="http://www.cis.cornell.edu/boom/2010sp/Awards.htm" target="_blank">Cisco Pioneer Award</a> at Cornell's BOOM 2010 student research conference.</p>
+        </div>
+        <div>
+          <span class="timeframe">August 2008 &ndash; May 2010</span>
+          <h3>
+            <span class="role">System Administrator</span>
+            <span class="institution">Cornell Language Acquisition Lab</span>
+            <span class="location">Ithaca, NY</span>
+          </h3>
+          <p>Administered an intranet of Macs and PCs, including Mac OS X servers which house data pertaining to the study of language acquisition. Developed an online dissemination portal and consulted on the methodology to develop and deploy infrastructure for a multisite distance learning course.</p>
+        </div>
+        <div>
+          <span class="timeframe">May 2009 &ndash; January 2010</span>
+          <h3>
+            <span class="role">Developer</span>
+            <span class="institution">CIT Advanced Technology and Architectures Group</span>
+            <span class="location">Ithaca, NY</span>
+          </h3>
+          <p>Devised a lightweight native framework for iPhone data dissemination to enable those without iPhone programming experience to easily provide their data to users.  Constructed an iPhone application and corresponding data entry tool to visually navigate the Cornell campus and its many services.</p>
+        </div>
+        <div>
+          <span class="timeframe">May 2008 &ndash; August 2008</span>
+          <h3>
+            <span class="role">Networks Intern</span>
+            <span class="institution">International Computer Science Institute</span>
+            <span class="location">Berkeley, CA</span>
+          </h3>
+          <p>Assisted staff members in NSF-funded research involving network troubleshooting and systems data analysis. Actively participated in weekly symposia regarding current topics in computer networking.</p>
+        </div>
+        <div>
+          <span class="timeframe">January 2007 &ndash; August 2008</span>
+          <h3>
+            <span class="role">Developer</span>
+            <span class="institution">Case Scheduler</span>
+            <span class="locaiton">Cleveland, OH</span>
+          </h3>
+          <p>Created a web service to more readily prepare academic schedules that incorporate classes as well as extracurriculars.  Case Scheduler indexes course data and adds significant time management functionality through novel search methods and visual data manipulation.</p>
+        </div>
+        <div>
+          <span class="timeframe">March 2007 &ndash; August 2007</span>
+          <h3>
+            <span class="role">Developer, Support Staff</span>
+            <span class="institution">CWRU Software Center</span>
+            <span class="location">Cleveland, OH</span>
+          </h3>
+          <p>Designed and implemented a software distribution portal used by thousands of faculty, staff, and students on a daily basis in order to streamline management and to simplify the end user experience.	Performed various maintenance and troubleshooting tasks pertaining to Mac software offerings.</p>
+        </div>
+      </section>
+      <section class="resume foldable" id="addl-experience">
+        <h2>Additional Experience</h2>
+        <div>
+          <span class="timeframe">January 2009 &ndash; October 2009</span>
+          <h3>
+            <span class="role">Resident Advisor</span>
+            <span class="institution">Cornell University</span>
+            <span class="location">Ithaca, NY</span>
+          </h3>
+          <p>Implemented floor and building programs consistent with the ideals of Campus Life and Residential Programs while working directly with two other co-RAs. Joined a staff of fifteen resident advisors mid-year to support a first-year community of nearly 500 first-year university students.</p>
+        </div>
+        <div>
+          <span class="timeframe">August 2007 &ndash; May 2008</span>
+          <h3>
+            <span class="role">Resident Assistant</span>
+            <span class="institution">Case Western Reserve University</span>
+            <span class="location">Cleveland, OH</span>
+          </h3>
+          <p>Crafted programs for a residential college of almost 300 first-year students.	Developed and maintained a community with emphasis on tolerance and respect.	Continued to nurture the residential arts community program as staff liaison to the residential college's theatrical company and overseeing executive board.</p>
+        </div>
+      </section>
+      <section class="resume" id="awards">
+        <h2>Academic Awards</h2>
+        <p>CWRU Trustee's Scholarship &#183; Douglas C. McGowan Scholarship &#183; Case Alumni Association Scholarship<br />Ohio Board of Regents Scholarship &#183; Dean's High Honors (6 semesters) &#183; NRHH Regional Recognition<br />Cisco Pioneer Award (2010 Cornell BOOM Conference)</p>
+      </section>
+    </section>
+  </body>
+</html>
